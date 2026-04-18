@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Design Studio</title>
+
+ <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #0b0f19;
+  color: #fff;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero span {
+  color: #ff4d5a;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff4d5a;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.dark {
+  background: #111827;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.item {
+  height: 200px;
+  background: linear-gradient(45deg, #ff4d5a, #6366f1);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #ff4d5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+}
+
+ </style>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container">
+    <h1 class="logo"> DOMIN Design</h1>
+    <nav>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h2>We Create <span>Visual Experiences</span></h2>
+    <p>Branding • UI Design • Social Media Graphics</p>
+    <a href="#work" class="btn">View Portfolio</a>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="work" class="section">
+  <h2>Our Work</h2>
+
+  <div class="portfolio">
+    <div class="item"> <img src=""></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section dark">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>We are a creative studio focused on delivering stunning visuals that elevate brands.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Let’s Work Together</h2>
+
+    <form action="https://formspree.io/f/xnjlvvvd" method="post">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Project details"></textarea>
+      <button>Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Domin Design Studio</p>
+</footer>
+
+</body>
+</html>
